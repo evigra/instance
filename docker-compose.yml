@@ -1,14 +1,14 @@
 version: '2'
 services:
   web:
-    image: odoo:{odoo_version}.0
+    image: odoo:13.0
     depends_on:
       - db
     ports:
-      - "81{odoo_version}:8069"
-      - "80{odoo_version}:80{odoo_version}"
-      - "8{odoo_version}71:8071"
-      - "8{odoo_version}72:8072"
+      - "8113:8069"
+      - "8013:8013"
+      - "8371:8071"
+      - "8372:8072"
     volumes:
       - web:/var/lib/odoo
       - ./config:/etc/odoo
