@@ -1,14 +1,14 @@
 version: '2'
 services:
   web:
-    image: odoo:14.0
+    image: odoo:15.0
     depends_on:
       - db
     ports:
-      - "8114:8069"
-      - "8014:8014"
-      - "8471:8071"
-      - "8472:8072"
+      - "8115:8069"
+      - "8015:8015"
+      - "8571:8071"
+      - "8572:8072"
     volumes:
       - web:/var/lib/odoo
       - ./config:/etc/odoo
